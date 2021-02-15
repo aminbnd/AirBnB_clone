@@ -1,5 +1,18 @@
 #!/usr/bin/python3
+import uuid
+from datetime import datetime
+import models
+date = "%Y-%m-%dT%H:%M:%S.%f"
 """Defines the BaseModel class """
+
 class BaseModel:
     """the BaseModel of the HBnB projectss """
-    pass
+    id = uuid.uuid4
+    created_at = datetime.now()
+    updated_at = datetime.now()
+
+    def __str__(self):
+        return ("[{}] {} {}".format(self.__class__.__name__, self.id, self.__dict__))
+    def save(self):
+        self.updated_at = datetime.now()
+
