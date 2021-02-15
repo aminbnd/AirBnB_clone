@@ -8,7 +8,7 @@ import models
 class BaseModel:
     """the BaseModel of the HBnB projectss """
     def __init__(self, *args, **kwargs):
-        """Initialize attributes and created, updated the date"""
+        """Initialize attributes and created, updatede the date"""
         date="%Y-%m-%dT%H:%M:%S.%f"
         if kwargs:
             for k, v in kwargs.items():
