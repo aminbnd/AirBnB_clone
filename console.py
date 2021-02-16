@@ -4,6 +4,12 @@
 import cmd
 from models.base_model import BaseModel
 from models import storage
+from models.user import User
+from models.state import State
+from models.city import City
+from models.amenity import Amenity
+from models.place import Place
+from models.review import Review
 
 
 def parse(line):
@@ -16,7 +22,8 @@ class HBNBCommand(cmd.Cmd):
         prompt (str): Command prompt.
     """
     prompt = "(hbnb) "
-    classes = {"BaseModel"}
+    classes = {"BaseModel", "State", "City",
+               "Amenity", "Place", "Review", "User"}
     def do_EOF(self, line):
         """To exit with Ctrl-D"""
         print("")
