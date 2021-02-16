@@ -3,7 +3,11 @@
 
 import cmd
 class HBNBCommand(cmd.Cmd):
-    """Class for command interpreter """
+    """Class for command interpreter
+    Attributes:
+        prompt (str): Command prompt.
+    """
+
     prompt = "(hbnb) "
     def do_EOF(self, line):
         """To exit with Ctrl-D """
