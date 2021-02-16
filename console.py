@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Command interpreter """
+"""Define Command interpreter"""
 
 import cmd
 class HBNBCommand(cmd.Cmd):
@@ -10,11 +10,11 @@ class HBNBCommand(cmd.Cmd):
 
     prompt = "(hbnb) "
     def do_EOF(self, line):
-        """To exit with Ctrl-D """
-        print()
+        """To exit with Ctrl-D"""
+        print("")
         return True
     def do_quit(self, line):
-        """quit command to exit the program """
+        """quit command to exit the program"""
         return True
 if __name__ == "__main__":
     HBNBCommand().cmdloop()
