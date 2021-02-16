@@ -10,7 +10,7 @@ class BaseModel:
     """the BaseModel of the HBnB projectss """
     def __init__(self, *args, **kwargs):
         """Initialize attributes and created, updatede the date"""
-        date="%Y-%m-%dT%H:%M:%S.%f"
+        date = "%Y-%m-%dT%H:%M:%S.%f"
         if kwargs:
             for k, v in kwargs.items():
                 if "created_at" == k:
@@ -38,8 +38,3 @@ class BaseModel:
         dict_1["updated_at"] = self.updated_at.isoformat()
         dict_1["__class__"] = self.__class__.__name__
         return dict_1
-<<<<<<< HEAD
-
-    
-=======
->>>>>>> f67ddd71b2ea9ac3a029bcc40efec8c1d881c015
