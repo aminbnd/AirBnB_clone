@@ -2,7 +2,7 @@
 """Define Command interpreter"""
 
 import cmd
-from models.base_model import   BaseModel
+from models.base_model import BaseModel
 from models import storage
 
 
@@ -52,7 +52,21 @@ class HBNBCommand(cmd.Cmd):
                     print(storage.all()[name])
         except IndexError:
             print("** instance id missing **")
-
+    def do_destroy(self, line):
+        """delete an instance of a given id"""
+        line1 = parse(line)
+        objdict = storage.all()
+        if len(line1) == 0:
+            print("** class name missing **")
+        elif line1[0] not in HBNBCommand.classes:
+            print("** class doesn't exist **")
+        elif len(line1) == 1:
+            print("** instance id missing **")
+        elif "{}.{}".format(line1[0], line1[1]) not in objdict.keys():
+            print("** no instance found **")
+        else:
+            del objdict["{}.{}".format(line1[0], line1[1])]
+            storage.save()
 
 if __name__ == "__main__":
     HBNBCommand().cmdloop()
