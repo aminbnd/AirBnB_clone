@@ -10,7 +10,7 @@ class HBNBCommand(cmd.Cmd):
         print()
         return True
     def do_quit(self, line):
-            """quit command to exit the program """
-            return True
+        """quit command to exit the program """
+        return True
 if __name__ == "__main__":
     HBNBCommand().cmdloop()
