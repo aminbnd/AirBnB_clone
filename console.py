@@ -3,6 +3,12 @@
 
 import cmd
 from models.base_model import   BaseModel
+from models import storage
+
+
+def parse(line):
+    """Helper method to parse user typed input"""
+    return tuple(line.split())
 
 class HBNBCommand(cmd.Cmd):
     """Class for command interpreter
@@ -28,6 +34,24 @@ class HBNBCommand(cmd.Cmd):
             instance = eval(line)()
             instance.save()
             print(instance.id)
+    def do_show(self, line):
+        """Print the string representation of an instance"""
+        if len(line) == 0:
+            print("** class name missing **")
+            return
+        args = parse(line)
+        if args[0] not in HBNBCommand.classes:
+            print("** class doesn't exist **")
+            return
+        try:
+            if args[1]:
+                name = "{}.{}".format(args[0], args[1])
+                if name not in storage.all().keys():
+                    print("** no instance found **")
+                else:
+                    print(storage.all()[name])
+        except IndexError:
+            print("** instance id missing **")
 
 
 if __name__ == "__main__":
