@@ -1,4 +1,4 @@
-# AirBnB_clone :alien:
+># #1589F0 AirBnB_clone :alien:
 ## Project description:
 
 ******
@@ -24,33 +24,38 @@
 | show        | User.show('object')            | retrieve an object from a file   |
 | all         | User.all()                     | display all objects in class     |
 | quit        | quit                           | exits                            |
+| Ctrl-D      | quit                           | exits                            |
 
 ******
+### Exemples with console
 
+##### (hbnb) help
+Documented commands (type help <topic>):
+========================================
+EOF  all  create  destroy  help  quit  show  update
 
-##### (hbnb) all MyModel
-** class doesn't exist **
 ##### (hbnb) show BaseModel
 ** instance id missing **
 ##### (hbnb) show BaseModel Holberton
 ** no instance found **
 ##### hbnb) create BaseModel
-49faff9a-6318-451f-87b6-910505c55907
+45230357-2a37-40ae-8574-1f2daf837961
 ##### (hbnb) all BaseModel
 ["[BaseModel] (49faff9a-6318-451f-87b6-910505c55907) {'created_at': datetime.datetime(2017, 10, 2, 3, 10, 25, 903293), 'id': '49faff9a-6318-451f-87b6-910505c55907', 'updated_at': datetime.datetime(2017, 10, 2, 3, 10, 25, 903300)}"]
 ##### (hbnb) show BaseModel 49faff9a-6318-451f-87b6-910505c55907
-[BaseModel] (49faff9a-6318-451f-87b6-910505c55907) {'created_at': datetime.datetime(2017, 10, 2, 3, 10, 25, 903293), 'id': '49faff9a-6318-451f-87b6-910505c55907', 'updated_at': datetime.datetime(2017, 10, 2, 3, 10, 25, 903300)}
+[BaseModel] 45230357-2a37-40ae-8574-1f2daf837961 {'id': '45230357-2a37-40ae-8574-1f2daf837961', 'created_at': datetime.datetime(2021, 2, 17, 23, 27, 54, 783860), 'updated_at': datetime.datetime(2021, 2, 17, 23, 27, 54, 783900)}
+
 ##### (hbnb) destroy
 ** class name missing **
 ##### (hbnb) update BaseModel 49faff9a-6318-451f-87b6-910505c55907 first_name "Betty"
 ##### (hbnb) show BaseModel 49faff9a-6318-451f-87b6-910505c55907
-[BaseModel] (49faff9a-6318-451f-87b6-910505c55907) {'first_name': 'Betty', 'id': '49faff9a-6318-451f-87b6-910505c55907', 'created_at': datetime.datetime(2017, 10, 2, 3, 10, 25, 903293), 'updated_at': datetime.datetime(2017, 10, 2, 3, 11, 3, 49401)}
+[BaseModel] 45230357-2a37-40ae-8574-1f2daf837961 {'id': '45230357-2a37-40ae-8574-1f2daf837961', 'created_at': datetime.datetime(2021, 2, 17, 23, 27, 54, 783860), 'updated_at': datetime.datetime(2021, 2, 17, 23, 33, 3, 100906), 'my_name': 'mehdi'}
 ##### (hbnb) create BaseModel
-2dd6ef5c-467c-4f82-9521-a772ea7d84e9
+2c3d53d9-1847-4f48-a7a5-0c5463bd0bb9
 ##### (hbnb) all BaseModel
-["[BaseModel] (2dd6ef5c-467c-4f82-9521-a772ea7d84e9) {'id': '2dd6ef5c-467c-4f82-9521-a772ea7d84e9', 'created_at': datetime.datetime(2017, 10, 2, 3, 11, 23, 639717), 'updated_at': datetime.datetime(2017, 10, 2, 3, 11, 23, 639724)}", "[BaseModel] (49faff9a-6318-451f-87b6-910505c55907) {'first_name': 'Betty', 'id': '49faff9a-6318-451f-87b6-910505c55907', 'created_at': datetime.datetime(2017, 10, 2, 3, 10, 25, 903293), 'updated_at': datetime.datetime(2017, 10, 2, 3, 11, 3, 49401)}"]
-##### (hbnb) destroy BaseModel 49faff9a-6318-451f-87b6-910505c55907
-##### (hbnb) show BaseModel 49faff9a-6318-451f-87b6-910505c55907
+["[BaseModel] (2dd6ef5c-467c-4f82-9521-a772ea7d84e9) {'id': '2dd6ef5c-467c-4f82-9521-a772ea7d84e9', 'created_at': datetime.datetime(2017, 10, 2, 3, 11, 23, 639717), 'updated_at': datetime.datetime(2017, 10, 2, 3, 11, 23, 639724)}", "[BaseModel] (49faff9a-6318-451f-87b6-910505c55907) {'first_name': 'betty', 'id': '49faff9a-6318-451f-87b6-910505c55907', 'created_at': datetime.datetime(2017, 10, 2, 3, 10, 25, 903293), 'updated_at': datetime.datetime(2017, 10, 2, 3, 11, 3, 49401)}"] 
+##### (hbnb) destroy BaseModel 45230357-2a37-40ae-8574-1f2daf837961
+##### (hbnb) show BaseModel 45230357-2a37-40ae-8574-1f2daf837961
 ** no instance found **
 ##### (hbnb)
 
