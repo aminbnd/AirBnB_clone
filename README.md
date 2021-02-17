@@ -5,25 +5,26 @@ This is the first phase of the Airbnb Clone: the console. This repository holds 
 
 
 ### How to start it:
-**Interactive mode, $ ./console.py, and you will prompted with (hbnb) **Non-interactive mode, $ echo "help" | ./console.py
+# Interactive mode, $ ./console.py, and you will prompted with (hbnb)
+# Non-interactive mode, $ echo "help" | ./console.py
 
 ### How to Use Command Interpreter:
-**help
-           *Usage: help
-***Documentation/help provided
-**create
-           *Usage: create BaseModel
-***Creates a new instance of a class, saves it (to the JSON file) and prints the id
-**show
-           *Usage: show BaseModel 1234-5847-3912
-***Prints the string representation of an instance based on the class name and id
-**destroy
-           *Usage: destroy BaseModel 1234-5847-3912
+## help
+# Usage: help
+## Documentation/help provided
+## create
+# Usage: create BaseModel
+## Creates a new instance of a class, saves it (to the JSON file) and prints the id
+# show
+# Usage: show BaseModel 1234-5847-3912
+## Prints the string representation of an instance based on the class name and id
+# destroy
+# Usage: destroy BaseModel 1234-5847-3912
 ***Deletes an instance based on the class name and id (save the change into the **JSON file).
            *all
 ***Usage: all
 **Prints all string representation of all instances based or not on the class name.*update
-**Usage: update User 1234-5678-9101 email 115@holbertonschool.com
+**Usage: update User 1234-5678-9101 email 2151@holbertonschool.com
 **Updates an instance based on the class name and id by adding or updating       attribute (save the change into the JSON file)Files
 ### Examples:
 #(hbnb) all MyModel
