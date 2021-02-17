@@ -30,8 +30,7 @@
 ### Exemples with console
 
 ##### (hbnb) help
-Documented commands (type help <topic>):
-========================================
+Documented commands (type help 
 EOF  all  create  destroy  help  quit  show  update
 
 ##### (hbnb) show BaseModel
