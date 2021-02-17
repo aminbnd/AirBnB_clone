@@ -15,6 +15,10 @@
 | help        | help                           | displays all commands available  |
 | create      | create <class>                 | creates new object               |
 | update      |User.update({'name':'Holberton'})|updates attribute of an object	  |
+| destroy     |User.destroy('object')          | destroys specified object        |
+| show        | User.show('object')            | retrieve an object from a file   |
+| all         | User.all()                     | display all objects in class     |
+| quit        | quit                           | exits                            |
 
 
 
