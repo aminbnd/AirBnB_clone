@@ -16,6 +16,7 @@ def parse(line):
     """Helper method to parse user typed input"""
     return tuple(line.split())
 
+
 class HBNBCommand(cmd.Cmd):
     """Class for command interpreter
     Attributes:
@@ -24,13 +25,16 @@ class HBNBCommand(cmd.Cmd):
     prompt = "(hbnb) "
     classes = {"BaseModel", "State", "City",
                "Amenity", "Place", "Review", "User"}
+
     def do_EOF(self, line):
         """To exit with Ctrl-D"""
         print("")
         return True
+
     def do_quit(self, line):
         """quit command to exit the program"""
         return True
+
     def do_create(self, line):
         """Create instance of class"""
         if len(line) == 0:
@@ -41,6 +45,7 @@ class HBNBCommand(cmd.Cmd):
             instance = eval(line)()
             instance.save()
             print(instance.id)
+
     def do_show(self, line):
         """Print the string representation of an instance"""
         if len(line) == 0:
@@ -59,6 +64,7 @@ class HBNBCommand(cmd.Cmd):
                     print(storage.all()[name])
         except IndexError:
             print("** instance id missing **")
+
     def do_destroy(self, line):
         """delete an instance of a given id"""
         line1 = parse(line)
@@ -74,6 +80,7 @@ class HBNBCommand(cmd.Cmd):
         else:
             del objdict["{}.{}".format(line1[0], line1[1])]
             storage.save()
+
     def do_all(self, line):
         """Prints all string representation of all instances"""
         args = parse(line)
@@ -89,6 +96,7 @@ class HBNBCommand(cmd.Cmd):
             print(obj_list)
         else:
             print("** class doesn't exist **")
+
     def do_update(self, line):
         """Update attribute value"""
         args = parse(line)
