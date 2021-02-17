@@ -1,4 +1,4 @@
-# AirBnB_clone
+# AirBnB_clone :alien:
 ## Project description:
 
 ******
@@ -52,13 +52,13 @@
 ##### (hbnb) destroy BaseModel 49faff9a-6318-451f-87b6-910505c55907
 ##### (hbnb) show BaseModel 49faff9a-6318-451f-87b6-910505c55907
 ** no instance found **
-##### (hbnb) 
+##### (hbnb)
 
 ******
 <br>
 <br>
 
-* *This project is written by **Mehdi Zitouni** and **Amin Bondi** as a part of end of trimester project of Holbeton School*
+* *This project is written by **Mehdi Zitouni** and **Amin Bondi** as a part of end of trimester project of Holbeton School* 	:wink:
 <br>
 <img src="https://www.holbertonschool.com/holberton-logo.png">
 
