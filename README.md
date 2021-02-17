@@ -1,4 +1,4 @@
-># <font color="blue"> AirBnB_clone </font>:alien:
+# <font color="blue"> AirBnB_clone </font>:alien:
 ## Project description:
 
 ******
