@@ -8,6 +8,7 @@ import models
 
 class BaseModel:
     """the BaseModel of the HBnB projectss """
+    
     def __init__(self, *args, **kwargs):
         """Initialize attributes and created, updatede the date"""
         date = "%Y-%m-%dT%H:%M:%S.%f"
@@ -28,13 +29,19 @@ class BaseModel:
             models.storage.new(self)
 
     def __str__(self):
+        """Return string"""
+
         return ("[{}] {} {}".format(self.__class__.__name__, self.id, self.__dict__))
 
     def save(self):
+        """save to serialized file"""
+        
         self.updated_at = datetime.now()
         models.storage.save()
 
     def to_dict(self):
+        """Return dic with string formats"""
+
         dict_1 = self.__dict__.copy()
         dict_1["created_at"] = self.created_at.isoformat()
         dict_1["updated_at"] = self.updated_at.isoformat()
