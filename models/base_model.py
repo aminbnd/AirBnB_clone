@@ -32,11 +32,7 @@ class BaseModel:
         """Return string"""
 
         return ("[{}] {} {}".format(self.__class__.__name__, self.id, self.__dict__))
-    def __repr__(self):
-        """
-        returns string representation
-        """
-        return (self.__str__())
+
 
     def save(self):
         """save to serialized file"""
