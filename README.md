@@ -14,6 +14,7 @@
 | ----------- |:------------------------------:| --------------------------------:|
 | help        | help                           | displays all commands available  |
 | create      | create <class>                 | creates new object               |
+| update      |User.update({'name':'Holberton'})|updates attribute of an object	  |
 
 
 
