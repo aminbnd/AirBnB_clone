@@ -8,7 +8,7 @@ import models
 
 class BaseModel:
     """the BaseModel of the HBnB projectss """
-    
+
     def __init__(self, *args, **kwargs):
         """Initialize attributes and created, updatede the date"""
         date = "%Y-%m-%dT%H:%M:%S.%f"
@@ -32,6 +32,11 @@ class BaseModel:
         """Return string"""
 
         return ("[{}] {} {}".format(self.__class__.__name__, self.id, self.__dict__))
+    def __repr__(self):
+        """
+        returns string representation
+        """
+        return (self.__str__())
 
     def save(self):
         """save to serialized file"""
