@@ -12,7 +12,7 @@ class BaseModel:
     def __init__(self, *args, **kwargs):
         """Initialize attributes and created, updatede the date"""
         date = "%Y-%m-%dT%H:%M:%S.%f"
-        if kwargs:
+        if len(kwargs) != 0:
             for k, v in kwargs.items():
                 if "created_at" == k:
                     self.created_at = datetime.strptime(kwargs["created_at"], date)
