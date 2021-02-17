@@ -58,7 +58,7 @@
 <br>
 <br>
 
-* *This project is written by **Mehdi Zitouni** and **Amin Bondi** as a part of end of trimester project of Holbeton School* 	:wink:
+* *This project is written by **Mehdi Zitouni** and **Amin Bondi** as a part of end of trimester project of Holbeton School*  ## :wink:
 <br>
 <img src="https://www.holbertonschool.com/holberton-logo.png">
 
