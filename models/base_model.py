@@ -15,9 +15,11 @@ class BaseModel:
         if len(kwargs) != 0:
             for k, v in kwargs.items():
                 if "created_at" == k:
-                    self.created_at = datetime.strptime(kwargs["created_at"], date)
+                    self.created_at = datetime.strptime(kwargs["created_at"],
+                                                        date)
                 elif "updated_at" == k:
-                    self.updated_at = datetime.strptime(kwargs["updated_at"], date)
+                    self.updated_at = datetime.strptime(kwargs["updated_at"],
+                                                        date)
                 elif "__class__" == k:
                     pass
                 else:
@@ -30,13 +32,13 @@ class BaseModel:
 
     def __str__(self):
         """Return string"""
-
-        return ("[{}] {} {}".format(self.__class__.__name__, self.id, self.__dict__))
-
+        var3 = self.id
+        var4 = self.__dict__
+        return ("[{}] {} {}".format(self.__class__.__name__, var3, var4))
 
     def save(self):
         """save to serialized file"""
-        
+
         self.updated_at = datetime.now()
         models.storage.save()
 
