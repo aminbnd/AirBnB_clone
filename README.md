@@ -1,4 +1,4 @@
-># #1589F0 AirBnB_clone :alien:
+># 1589F0 AirBnB_clone :alien:
 ## Project description:
 
 ******
