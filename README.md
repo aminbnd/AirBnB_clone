@@ -3,7 +3,7 @@
 
 ******
 
-* This is the first phase of the Airbnb Clone: the console. This repository holds a command interpreter and classes (i.e. BaseModel class and several other classes that inherit from it: Amenity, City, State, Place, Review), and a command interpreter. The command interpreter, like a shell, can be activated, take in user input, and perform certain tasks to manipulate the object instances.
+* *This is the first phase of the Airbnb Clone: the console. This repository holds a command interpreter and classes (i.e. BaseModel class and several other classes that inherit from it: Amenity, City, State, Place, Review), and a command interpreter. The command interpreter, like a shell, can be activated, take in user input, and perform certain tasks to manipulate the object instances.*
 
 
 ## How to start it:
@@ -58,7 +58,7 @@
 <br>
 <br>
 
-* This project is written by Mehdi Zitouni and Amin Bondi as a part of end of trimester project of Holbeton School
+* *This project is written by **Mehdi Zitouni** and **Amin Bondi** as a part of end of trimester project of Holbeton School*
 <br>
 <img src="https://www.holbertonschool.com/holberton-logo.png">
 
